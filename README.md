@@ -33,7 +33,7 @@ PuppetLint.configuration.metrics_abc_error = 50
 #### To set the warning threshold to 10
 
 ```ruby
-PuppetLint.configuration.metrics_abc_error = 10
+PuppetLint.configuration.metrics_abc_warning = 10
 ```
 
 #### Disabling the check
