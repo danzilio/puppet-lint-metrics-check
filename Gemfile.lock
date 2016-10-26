@@ -3,7 +3,7 @@ PATH
   specs:
     puppet-lint-metrics-check (0.1.0)
       puppet (~> 4)
-      puppet-lint (~> 1.0)
+      puppet-lint (>= 1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -19,7 +19,7 @@ GEM
       facter (> 2.0, < 4)
       hiera (>= 2.0, < 4)
       json_pure (~> 1.8)
-    puppet-lint (1.1.0)
+    puppet-lint (2.0.2)
     rake (11.3.0)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)

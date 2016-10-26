@@ -6,7 +6,7 @@ PuppetLint.new_check(:abc_size) do
     @fail = PuppetLint.configuration.metrics_abc_error || 100
 
     parser = Puppet::Pops::Parser::EvaluatingParser.new
-    program = parser.parse_string(manifest_lines.join)
+    program = parser.parse_string(manifest_lines.join("\n"))
     abc_metric = PuppetLint::Metrics::Abc.new
 
     abc_size = abc_metric.compute(program.model).last
