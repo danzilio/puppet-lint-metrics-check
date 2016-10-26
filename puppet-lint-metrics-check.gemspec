@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.summary     = 'A puppet-lint plugin to check code quality metrics.'
   spec.description = spec.summary
 
-  spec.add_dependency             'puppet-lint', '~> 1.0'
+  spec.add_dependency             'puppet-lint', '>= 1.0'
   spec.add_dependency             'puppet', '~> 4'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rspec-its', '~> 1.0'
