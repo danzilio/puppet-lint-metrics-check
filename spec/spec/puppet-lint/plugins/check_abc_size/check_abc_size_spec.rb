@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'abc_size' do
   context 'warn when abc is above the configured warning size' do
     before do
-      PuppetLint.configuration.metrics_abc_warn = 0
+      PuppetLint.configuration.metrics_abc_warning = 0
     end
 
     let(:code) do
@@ -23,7 +23,7 @@ describe 'abc_size' do
 
   context 'fail when abc is above the configured failure size' do
     before do
-      PuppetLint.configuration.metrics_abc_fail = 0
+      PuppetLint.configuration.metrics_abc_error = 0
     end
 
     let(:code) do
@@ -43,8 +43,8 @@ describe 'abc_size' do
 
   context 'do nothing when abc is within parameters' do
     before do
-      PuppetLint.configuration.metrics_abc_warn = 30
-      PuppetLint.configuration.metrics_abc_fail = 100
+      PuppetLint.configuration.metrics_abc_warning = 30
+      PuppetLint.configuration.metrics_abc_error = 100
     end
 
     let(:code) do

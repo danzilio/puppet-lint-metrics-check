@@ -2,8 +2,8 @@ require 'puppet-lint/metrics/abc'
 
 PuppetLint.new_check(:abc_size) do
   def check
-    @warn = PuppetLint.configuration.metrics_abc_warn || 30
-    @fail = PuppetLint.configuration.metrics_abc_fail || 100
+    @warn = PuppetLint.configuration.metrics_abc_warning || 30
+    @fail = PuppetLint.configuration.metrics_abc_error || 100
 
     parser = Puppet::Pops::Parser::EvaluatingParser.new
     program = parser.parse_string(manifest_lines.join)

@@ -51,6 +51,10 @@ class PuppetLint
         branch
       end
 
+      def abc_CollectorExpression(o)
+        branch
+      end
+
       def abc_CallExpression(o)
         branch
       end
@@ -59,7 +63,27 @@ class PuppetLint
         branch
       end
 
-      def abc_AndExpression(o)
+      def abc_EqualityExpression(o)
+        conditional
+      end
+
+      def abc_MatchExpression(o)
+        conditional
+      end
+
+      def abc_NotMatchExpression(o)
+        conditional
+      end
+
+      def abc_ComparisonExpression(o)
+        conditional
+      end
+
+      def abc_InExpression(o)
+        conditional
+      end
+
+      def abc_NotExpression(o)
         conditional
       end
 
@@ -71,23 +95,7 @@ class PuppetLint
         conditional
       end
 
-      def abc_OrExpression(o)
-        conditional
-      end
-
       def abc_CaseExpression(o)
-        conditional
-      end
-
-      def abc_ComparisonExpression(o)
-        conditional
-      end
-
-      def abc_MatchExpression(o)
-        conditional
-      end
-
-      def abc_InExpression(o)
         conditional
       end
 
