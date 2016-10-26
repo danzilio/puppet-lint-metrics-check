@@ -37,14 +37,14 @@ PuppetLint.configuration.metrics_abc_warning = 10
 ```
 
 #### Disabling the check
-To disable this check, you can add `--no-metrics-check` to your puppet-lint command line.
+To disable this check, you can add `--no-abc_metric-check` to your puppet-lint command line.
 
 ```shell
-$ puppet-lint --no-metrics-check path/to/file.pp
+$ puppet-lint --no-abc_metric-check path/to/file.pp
 ```
 
 Alternatively, if you’re calling puppet-lint via the Rake task, you should insert the following line to your `Rakefile`.
 
 ```ruby
-PuppetLint.configuration.send('disable_metrics')
+PuppetLint.configuration.send('disable_abc_metric')
 ```
