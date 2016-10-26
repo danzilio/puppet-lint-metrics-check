@@ -4,7 +4,7 @@
 [![Gem Version](https://img.shields.io/gem/v/puppet-lint-metrics-check.svg)](https://rubygems.org/gems/puppet-lint-metrics-check)
 [![Gem Downloads](https://img.shields.io/gem/dt/puppet-lint-metrics-check.svg)](https://rubygems.org/gems/puppet-lint-metrics-check)
 
-A puppet-lint plugin to analyze your code and report code quality metrics. Right now this code only supports the Assignment Branch Condition metric. For more information on how we compute this metric, please see docs/abc_metric.md.
+A puppet-lint plugin to analyze your code and report code quality metrics. Right now this code only supports the Assignment Branch Condition metric. For more information on how we compute this metric, please see [docs/abc_metric.md](docs/abc_metric.md).
 
 ## Installing
 ### From the command line
