@@ -1,6 +1,6 @@
 # Assignment Branch Condition
 
-Assignment Branch Condition (ABC) size is a way to measure the size of your code. It was first proposed in 1997 by Jerry Fitzpatrick in an article originally published in __C++ Report__. You can read the original paper [here](http://www.softwarerenovation.com/ABCMetric.pdf).
+Assignment Branch Condition (ABC) size is a way to measure the size of your code. It was first proposed in 1997 by Jerry Fitzpatrick in an article originally published in _C++ Report_. You can read the original paper [here](http://www.softwarerenovation.com/ABCMetric.pdf).
 
 Here's how we calculate the ABC size for Puppet:
 
